@@ -1,0 +1,31 @@
+#!/bin/sh
+
+set -eux
+
+command=$1
+shift
+
+case "${command}" in
+    configure)
+	upstream_dir=$1
+	ln -fns "${upstream_dir}/cetape-etlegacy" /opt/cetape-etlegacy
+        ln -fns "${upstream_dir}/cetape-etlegacy/ET.xpm" /usr/share/icons/ET.xpm
+        ln -fns "${upstream_dir}/cetape-etlegacy/desktop/cetape-etlegacy.desktop"  /usr/share/applications/cetape-etlegacy.desktop
+        ln -fns "${upstream_dir}/cetape-etlegacy/desktop/cetape-etlegacy-tce.desktop"  /usr/share/applications/cetape-etlegacy-tce.desktop
+        ln -fns "${upstream_dir}/cetape-etlegacy/desktop/cetape-etlegacy-cqb.desktop" /usr/share/applications/cetape-etlegacy-cqb.desktop
+	;;
+    unconfigure)
+	rm -f /opt/cetape-etlegacy \
+              /usr/share/applications/cetape-etlegacy* \
+              /usr/share/icons/ET.xpm
+	;;
+    unpack)
+	upstream_pack=$1
+	upstream_dir=$2
+
+        unzip -q -d "${upstream_dir}" "${upstream_pack}"
+        #chmod +x "${upstream_dir}/cetape-etlegacy/etlegacy.x86_64"
+	;;
+    *)
+	;;
+esac

@@ -1,0 +1,32 @@
+#!/bin/sh
+
+set -eux
+
+command=$1
+shift
+
+case "${command}" in
+    configure)
+	upstream_dir=$1
+	ln -fns "${upstream_dir}/cetape-openarena" /opt/cetape-openarena
+        ln -fns "${upstream_dir}/cetape-openarena/truecombat.png" /usr/share/icons/truecombat.png
+        ln -fns "${upstream_dir}/cetape-openarena/desktop/cetape-openarena.desktop"  /usr/share/applications/cetape-openarena.desktop
+        ln -fns "${upstream_dir}/cetape-openarena/desktop/cetape-openarena-wine.desktop"  /usr/share/applications/cetape-openarena-wine.desktop
+        ln -fns "${upstream_dir}/cetape-openarena/desktop/cetape-openarena-gamma.desktop" /usr/share/applications/cetape-openarena-gamma.desktop
+	;;
+    unconfigure)
+	rm -f /opt/cetape-openarena \
+              /usr/share/applications/cetape-openarena* \
+              /usr/share/applications/truecombat* \
+              /usr/share/icons/cetape-openarena.png
+	;;
+    unpack)
+	upstream_pack=$1
+	upstream_dir=$2
+
+        unzip -q -d "${upstream_dir}" "${upstream_pack}"
+        #chmod +x "${upstream_dir}/cetape-openarena/openarena.x86_64"
+	;;
+    *)
+	;;
+esac
