@@ -1,0 +1,27 @@
+#!/bin/sh
+
+set -eux
+
+command=$1
+shift
+
+case "${command}" in
+    configure)
+	upstream_dir=$1
+	ln -fns "${upstream_dir}/cetape-quake" /opt/cetape-quake
+        ln -fns "${upstream_dir}/cetape-quake/cetape-quake.desktop"  /usr/share/applications/cetape-quake.desktop
+        ln -fns "${upstream_dir}/cetape-quake/cetape-quake.png"  /usr/share/icons/cetape-quake.png
+	;;
+    unconfigure)
+	rm -f /opt/cetape-quake \
+              /usr/share/applications/cetape-quake.desktop \
+	;;
+    unpack)
+	upstream_pack=$1
+	upstream_dir=$2
+
+        unzip -q -d "${upstream_dir}" "${upstream_pack}"
+	;;
+    *)
+	;;
+esac

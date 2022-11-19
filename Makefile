@@ -4,8 +4,10 @@ datarootdir = $(prefix)/share
 INSTALL = install
 INSTALL_DATA = $(INSTALL) -m 644
 
-packagedirs  = cetape-openarena
+packagedirs  = cetape-doom
 packagedirs += cetape-etlegacy
+packagedirs += cetape-openarena
+packagedirs += cetape-quake
 
 packagefiles = $(patsubst %,%.tar.gz,${packagedirs})
 

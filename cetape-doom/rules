@@ -1,0 +1,27 @@
+#!/bin/sh
+
+set -eux
+
+command=$1
+shift
+
+case "${command}" in
+    configure)
+	upstream_dir=$1
+	ln -fns "${upstream_dir}/cetape-doom" /opt/cetape-doom
+        ln -fns "${upstream_dir}/cetape-doom/cetape-doom.desktop"  /usr/share/applications/cetape-doom.desktop
+        ln -fns "${upstream_dir}/cetape-doom/cetape-doom.png"  /usr/share/icons/cetape-doom.png
+	;;
+    unconfigure)
+	rm -f /opt/cetape-doom \
+              /usr/share/applications/cetape-doom.desktop \
+	;;
+    unpack)
+	upstream_pack=$1
+	upstream_dir=$2
+
+        unzip -q -d "${upstream_dir}" "${upstream_pack}"
+	;;
+    *)
+	;;
+esac
