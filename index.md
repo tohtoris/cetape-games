@@ -12,7 +12,7 @@ Tervetuloa Cetape dokumentaatioon. Tänne on koottuna olennaisimmat vinkit pelaa
 Suosittelen avaaman tämän sivuston omalle kännykällesi pelien ajaksi, jolloin voit katsoa ohjeita siitä esim. näppäimistöyhdistelmistä poistumatta peli-ikkunasta.
 
 ## Tietokone ja oheislaitteet
-Jos mahdollista niin valitse laitekokoonpano jolla osallistut laneihin. Lainakoneena olevat setupit pyritään testaamaan ajoissa, jotta vierailevien tähtien osallistuminen olisi mutkatonta. Esim. headsettien osalta tämä ei ole välttämättä mahdolista joten varaudu testaamaan nämä heti saavuttuasi paikalle.
+Jos mahdollista niin valitse/päätä ajoissa (hyvissä ajoin ennen kun pelit alkaa) laitekokoonpano jolla osallistut laneihin. Lainakoneena olevat setupit pyritään testaamaan ajoissa, jotta vierailevien tähtien osallistuminen olisi mutkatonta. Esim. headsettien osalta tämä ei ole välttämättä mahdolista joten varaudu testaamaan nämä heti saavuttuasi paikalle.
 
 ## Tarvittavat tilit ja oheisohjelma
 
