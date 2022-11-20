@@ -44,13 +44,13 @@ Kotikoneille asennuspaketit saa WA, Discord, Mattermost jne. kanavien kautta kys
 git clone https://github.com/tohtoris/cetape-games
 cd cetape-games
 make
-sudo pauvo-pkg install peli.tar.gz
+sudo puavo-pkg install peli.tar.gz
 ```
 
 ## OpenArena Truecombat
 
 Yleisin pelattava peli on **Quake 3 modi Truecombat**. Alkuperäinen openarena löytyy [täältä](https://openarena.ws) ja truecombat [täältä](https://truecombat.com). Pelin idea:
-* Truebombat on CS-tyylinen taistelu peli ja realismi modi Quake3-moottorille. Pelissä ei siis pysty loputtomasti juoksemaan, pomppimaan, ottamaan iskua, vaan välillä pitää levätä ja nuolla haavoja. 
+* Truebombat on CS-tyylinen taistelupeli ja realismimodi Quake3-moottorille. Pelissä ei siis pysty loputtomasti juoksemaan, pomppimaan ja ottamaan iskua, vaan välillä pitää levätä ja nuolla haavoja. 
 * Mitä enemmän kannat kamaa (Aseita, kypärä, liivit jne.) sitä kömpelömpi ja hitaampi olet.
 * Yleensä pelataan joukkuettain "Lipun ryöstöä"
 * Sama kenttä pelataan yleensä molempiin suuntiin
