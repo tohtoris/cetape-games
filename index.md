@@ -8,7 +8,7 @@ Tervetuloa Cetape -lanidokumentaatioon. Tänne on koottuna olennaisimmat vinkit 
 
 # Yleistä
 
-Suosittelen avaaman tämän sivuston omalle kännykällesi pelien ajaksi, jolloin voit katsoa ohjeita siitä esim. näppäimistöyhdistelmistä poistumatta peli-ikkunasta.
+Suosittelen avaaman tämän sivuston omalle kännykällesi pelien ajaksi, jolloin voit katsoa ohjeita poistumatta peli-ikkunasta.
 
 Tämän sivun saat selaimeen esim. seuraavasta: 
 ![Cetape_QR_Code](https://github.com/tohtoris/cetape-games/raw/gh-pages/cetape-games-qr.png)
@@ -55,9 +55,10 @@ Yleisin pelattava peli on **Quake 3 (Openarena) modi Truecombat**. Alkuperäinen
 
 ### FAQ / Hyvä tietää
 
-* Miten saan konsolin auki? `Shift + 1/2 (Esc-näppäimen alapuolella`
-* Miten pääsen työpöydälle sulkematta peliä? Ensin `Alt + Enter` ja sitten `Shift + 1/2`
-* Miten pääsen työpöydältä takas peliin? Etsi ikkuna ja sitten sama kuin yllä ^ 
+* Miten saan konsolin auki? `Shift + Esc`
+* Miten pääsen työpöydälle sulkematta peliä? Ensin `Alt + Enter` ja sitten `Shift + Esc`
+* Miten pääsen työpöydältä takas peliin? Etsi ikkuna ja sitten sama kuin yllä toisin päin ^ 
+* Miten vaihdan joukkuetta? Avaa konsoli `Shift + Esc` ja kirjoita `/team red` tai `blue`
 
 ### Pelin käynnistäminen ja peliin liittyminen
 
@@ -75,6 +76,9 @@ Eniten laneissa pelatut kentät: Bahamut, Casino...... muita pitää kaivella li
 **Peliin liittyminen (Lanit)**
 * Käynnistä Openarena
 * Valitse Multiplayer > Specify > Kirjoita pelipalvelimen osoite
+* Paina `Esc` ja valitse `Join`
+* Valitse aina Autoteam (Joukkue kannattaa valita jälkeen päin komentoriviltä)
+* Muista valita ase ja siihen lippaita
 
 ### Resoluution asettaminen
 
