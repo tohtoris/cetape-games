@@ -14,11 +14,13 @@ Suosittelen avaaman tämän sivuston omalle kännykällesi pelien ajaksi, jolloi
 ## Tietokone ja oheislaitteet
 Jos mahdollista niin valitse/päätä ajoissa (hyvissä ajoin ennen kun pelit alkaa) laitekokoonpano jolla osallistut laneihin. Lainakoneena olevat setupit pyritään testaamaan ajoissa, jotta vierailevien tähtien osallistuminen olisi mutkatonta. Esim. headsettien osalta tämä ei ole välttämättä mahdolista joten varaudu testaamaan nämä heti saavuttuasi paikalle.
 
-## Tarvittavat tilit ja oheisohjelma
+## Tarvittavat tilit ja oheisohjelmat
 
 Cetape-lanien tavoite on pelata maksuttomia pelejä, jotka eivät vaadi kirjautumista tai erillisiä tunnuksia. Näin pelit on mahdollista esiasentaa koneille ja henkilöt jotka eivät muuten tuhlaa elämäänsä pelailuun pääsevät helposti mukaan. 
 
 Voip-keskusteluissa käytetään kuitenkin Discord-palvelua, johon sinun tulee rekisteröindä oma tunnus ja liittyä kanavalle. Linkki Discordin Cetape-kanavalle löytyy Lani-kutsuista. Discordia voi käyttää selaimella tai erillisellä sovelluksella.
+
+Vara-Voipina on käytetty Mumblea.
 
 Testaa Laneilla pelattavaa peliä etukäteen, selvitä pääkontrollit, pikanäppäimet. Vinkkejä löydät täältä tai kysymällä.
 
