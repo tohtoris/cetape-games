@@ -4,12 +4,9 @@ layout: default
 > You got enemy flag!
 > ...Captured!
 
-Tervetuloa Cetape dokumentaatioon. Tänne on koottuna olennaisimmat vinkit pelaamiseen ja laineihin osallistumiseen.
+Tervetuloa Cetape -lanidokumentaatioon. Tänne on koottuna olennaisimmat vinkit pelaamiseen ja laineihin osallistumiseen.
 
 # Yleistä
-
-
-# Näin saat Laneihin osallistumisesta sujuvaa
 
 Suosittelen avaaman tämän sivuston omalle kännykällesi pelien ajaksi, jolloin voit katsoa ohjeita siitä esim. näppäimistöyhdistelmistä poistumatta peli-ikkunasta.
 
@@ -19,11 +16,11 @@ Tämän sivun saat selaimeen esim. seuraavasta:
 ## Tietokone ja oheislaitteet
 Jos mahdollista niin valitse/päätä ajoissa (hyvissä ajoin ennen kun pelit alkaa) laitekokoonpano jolla osallistut laneihin. Lainakoneena olevat setupit pyritään testaamaan ajoissa, jotta vierailevien tähtien osallistuminen olisi mutkatonta. Esim. headsettien osalta tämä ei ole välttämättä mahdolista joten varaudu testaamaan nämä heti saavuttuasi paikalle.
 
-## Tarvittavat tilit ja oheisohjelmat
+## Tarvittavat käyttäjätilit ja oheisohjelmat
 
-Cetape-lanien tavoite on pelata maksuttomia pelejä, jotka eivät vaadi kirjautumista tai erillisiä tunnuksia. Näin pelit on mahdollista esiasentaa koneille ja henkilöt jotka eivät muuten tuhlaa elämäänsä pelailuun pääsevät helposti mukaan. 
+Cetape-laneilla pelataan ensisijaisesti pelejä, jotka eivät vaadi kirjautumista tai erillisiä tunnuksia. Tästä voidaan poiketa erikseen sovittaessa. Tavoitteena on, että normaalisti vähän pelaavat pääsevät helposti mukaan. 
 
-Voip-keskusteluissa käytetään kuitenkin **Discord**-palvelua, johon sinun tulee rekisteröindä oma tunnus ja liittyä kanavalle. Linkki Discordin Cetape-kanavalle löytyy Lani-kutsuista. Discordia voi käyttää selaimella tai erillisellä sovelluksella.
+Voip-keskusteluissa käytetään **Discord**-palvelua, johon sinun tulee rekisteröindä oma tunnus ja liittyä kanavalle. Linkki Discordin Cetape-kanavalle löytyy Lani-kutsuista. Discordia voi käyttää selaimella tai erillisellä sovelluksella.
 
 Vara-Voipina on käytetty **Mumblea**.
 
@@ -49,7 +46,7 @@ sudo puavo-pkg install peli.tar.gz
 
 ## OpenArena Truecombat
 
-Yleisin pelattava peli on **Quake 3 modi Truecombat**. Alkuperäinen openarena löytyy [täältä](https://openarena.ws) ja truecombat [täältä](https://truecombat.com). Pelin idea:
+Yleisin pelattava peli on **Quake 3 (Openarena) modi Truecombat**. Alkuperäinen openarena löytyy [täältä](https://openarena.ws) ja truecombat [täältä](https://truecombat.com). Pelin idea:
 * Truebombat on CS-tyylinen taistelupeli ja realismimodi Quake3-moottorille. Pelissä ei siis pysty loputtomasti juoksemaan, pomppimaan ja ottamaan iskua, vaan välillä pitää levätä ja nuolla haavoja. 
 * Mitä enemmän kannat kamaa (Aseita, kypärä, liivit jne.) sitä kömpelömpi ja hitaampi olet.
 * Yleensä pelataan joukkuettain "Lipun ryöstöä"
@@ -65,13 +62,13 @@ Yleisin pelattava peli on **Quake 3 modi Truecombat**. Alkuperäinen openarena l
 ### Pelin käynnistäminen ja peliin liittyminen
 
 **Käynnistäminen ja asetukset (ennen laneja)**
-* Käynnistä OpenArena
-* Valitse Modit
-* Valitse TrueCombat
-* Mene asetuksiin (Options > Player)
-** Aseta pelaajallesi nimi
-** Etsi näpäin asetukset ja muokkaa mieleiseksi
-* Testaa peliä/näppäimiä jne. luomalla itsellesi paikallinen serveri (voit lisätä botteja)
+1. Käynnistä OpenArena
+2. Valitse Modit
+3. Valitse TrueCombat
+4. Mene asetuksiin (Options > Player)
+-- Aseta pelaajallesi nimi
+-- Etsi näpäin asetukset ja muokkaa mieleiseksi
+5. Testaa peliä/näppäimiä jne. luomalla itsellesi paikallinen serveri (voit lisätä botteja)
 
 Eniten laneissa pelatut kentät: Bahamut, Casino...... muita pitää kaivella listaa
 
@@ -88,22 +85,21 @@ cd .openarena/truecombat
 gedit q3config.cfg
 ```
 Etsi seuraava asetus ja...
+```
 seta r_customheight "1080"
 seta r_customwidth "1920"
 seta r_noborder "0"
 seta r_fullscreen "1"
 seta r_mode "-1"
-
+```
 1. syötä oma resoluutio. 
 2. huolehdi että set `r_mode on -1`
 3. tallenna
 4. käynnistä peli uudelleen
-```
 
-```
-### Näppäimet
+### Oletusnäppäimet
 
-Oletuksina käytettävät kontrollit ovat
+Oletuksina käytettävät kontrollit ovat (nämä tietysti voit muokata mieleiseksesi)
 
 | **Tapahtuma**             | **Kontrolli**          | **Huomioita**                                                |
 |---------------------------|------------------------|--------------------------------------------------------------|
