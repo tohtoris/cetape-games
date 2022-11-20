@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-> You got enemy flag!
+> You got the enemy flag!
 > ...Captured!
 
 Tervetuloa Cetape -lanidokumentaatioon. Tänne on koottuna olennaisimmat vinkit pelaamiseen ja laineihin osallistumiseen.
