@@ -1,6 +1,8 @@
 ---
 layout: default
 ---
+> You got enemy flag!
+> ...Captured!
 
 Tervetuloa Cetape dokumentaatioon. Tänne on koottuna olennaisimmat vinkit pelaamiseen ja laineihin osallistumiseen.
 
@@ -18,9 +20,9 @@ Jos mahdollista niin valitse/päätä ajoissa (hyvissä ajoin ennen kun pelit al
 
 Cetape-lanien tavoite on pelata maksuttomia pelejä, jotka eivät vaadi kirjautumista tai erillisiä tunnuksia. Näin pelit on mahdollista esiasentaa koneille ja henkilöt jotka eivät muuten tuhlaa elämäänsä pelailuun pääsevät helposti mukaan. 
 
-Voip-keskusteluissa käytetään kuitenkin Discord-palvelua, johon sinun tulee rekisteröindä oma tunnus ja liittyä kanavalle. Linkki Discordin Cetape-kanavalle löytyy Lani-kutsuista. Discordia voi käyttää selaimella tai erillisellä sovelluksella.
+Voip-keskusteluissa käytetään kuitenkin **Discord**-palvelua, johon sinun tulee rekisteröindä oma tunnus ja liittyä kanavalle. Linkki Discordin Cetape-kanavalle löytyy Lani-kutsuista. Discordia voi käyttää selaimella tai erillisellä sovelluksella.
 
-Vara-Voipina on käytetty Mumblea.
+Vara-Voipina on käytetty **Mumblea**.
 
 Testaa Laneilla pelattavaa peliä etukäteen, selvitä pääkontrollit, pikanäppäimet. Vinkkejä löydät täältä tai kysymällä.
 
@@ -30,7 +32,7 @@ Testaa Laneilla pelattavaa peliä etukäteen, selvitä pääkontrollit, pikanäp
 
 #### Kotikone 
 
-Pelipaketista jonka saat Cetape-kanavilta on binäärit Linux, Mac, Win -käyttiksille. Testaa pelin toiminta omalla konellasi ajoissa. Tarjolla on myls puavo-pkg asentimet ja puavomenu template.
+Pelipaketista jonka saat Cetape-kanavilta on binäärit **Linux, Mac, Win** -käyttiksille. Testaa pelin toiminta omalla konellasi ajoissa. Tarjolla on myös **puavo-pkg** asentimet ja puavomenu template.
 
 Kotikoneille asennuspaketit saa WA, Discord, Mattermost jne. kanavien kautta kyselemällä. Asennuspaketeissa pääpaino on x86-Linuxissa. Win & Mac löytynee kanssa, mutta näihin ei ole kiinnitetty erityistä huomiota ja joudut testaamaan nämä itse.
 
@@ -43,13 +45,12 @@ sudo pauvo-pkg install peli.tar.gz
 ```
 ### Vinkit
 
-#### OpenArena Truecombat
+## OpenArena Truecombat
 
-> You got enemy flag!
-> ...Captured!
 
-Yleisin pelattava peli on Quake 3 modi Truecombat. Alkuperäinen openarena löytyy [täältä](https://openarena.ws) ja truecombat [täältä](https://truecombat.com). Pelin idea
-* Truebombat on CS-tyylinen taistelu peli ja realismi modi Quake3-moottorille. Pelissä ei syys pysty loputtomasti juoksemaan, pomppimaan, ottamaan iskua, vaan väillä pitää levätä ja nuolla haavoja. 
+
+Yleisin pelattava peli on **Quake 3 modi Truecombat**. Alkuperäinen openarena löytyy [täältä](https://openarena.ws) ja truecombat [täältä](https://truecombat.com). Pelin idea:
+* Truebombat on CS-tyylinen taistelu peli ja realismi modi Quake3-moottorille. Pelissä ei siis pysty loputtomasti juoksemaan, pomppimaan, ottamaan iskua, vaan välillä pitää levätä ja nuolla haavoja. 
 * Mitä enemmän kannat kamaa (Aseita, kypärä, liivit jne.) sitä kömpelömpi ja hitaampi olet.
 * Yleensä pelataan joukkuettain "Lipun ryöstöä"
 * Sama kenttä pelataan yleensä molempiin suuntiin
@@ -61,7 +62,7 @@ Yleisin pelattava peli on Quake 3 modi Truecombat. Alkuperäinen openarena löyt
 * Miten pääsen työpöydälle sulkematta peliä? Ensin `Alt + Enter` ja sitten `Shift + 1/2`
 * Miten pääsen työpöydältä takas peliin? Etsi ikkuna ja sitten sama kuin yllä ^ 
 
-##### Resoluution asettaminen
+### Resoluution asettaminen
 
 Openarena ei ymmärrä mitään laajakuvaresoluutioista, joten saatat joutua editoimaan resoluutioita käsin peli q3config.cfg-tiedostosta. Resoluutio on oletuksena pyritty asettamaan FullHD-asetuksella. Lanikoulussa olevilta koneilta tiedosto löytyy suoraan pikalinkkinä käynnistys (Menu)-valikosta. Voit editoida myös haluamallasi tekstiedotorilla komentoriviltä seuravasti.
 
@@ -81,7 +82,7 @@ seta r_noborder "0"
 seta r_fullscreen "1"
 seta r_mode "-1"
 ```
-##### Näppäimet
+### Näppäimet
 
 Oletuksina käytettävät kontrollit ovat
 
