@@ -115,7 +115,7 @@ Oletuksina käytettävät kontrollit ovat (nämä tietysti voit muokata mieleise
 | Pudota ase                | Z                      |                                                              |
 | Oven avaus                | Enter                  |                                                              |
 | Tähtääminen               | Vasen hiiri            |                                                              |
-| Haavan sitominen (badage) | B                      |                                                              |
+| Haavan sitominen (bandage) | B                      |                                                              |
 | Puhu kaikille             | P                      |                                                              |
 | Puhu tiimille             | T                      |                                                              |
 
