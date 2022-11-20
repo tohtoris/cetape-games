@@ -13,6 +13,9 @@ Tervetuloa Cetape dokumentaatioon. Tänne on koottuna olennaisimmat vinkit pelaa
 
 Suosittelen avaaman tämän sivuston omalle kännykällesi pelien ajaksi, jolloin voit katsoa ohjeita siitä esim. näppäimistöyhdistelmistä poistumatta peli-ikkunasta.
 
+Tämän sivun saat selaimeen esim. seuraavasta: 
+![Cetape_QR_Code](https://github.com/tohtoris/cetape-games/raw/gh-pages/cetape-games-qr.png)
+
 ## Tietokone ja oheislaitteet
 Jos mahdollista niin valitse/päätä ajoissa (hyvissä ajoin ennen kun pelit alkaa) laitekokoonpano jolla osallistut laneihin. Lainakoneena olevat setupit pyritään testaamaan ajoissa, jotta vierailevien tähtien osallistuminen olisi mutkatonta. Esim. headsettien osalta tämä ei ole välttämättä mahdolista joten varaudu testaamaan nämä heti saavuttuasi paikalle.
 
@@ -32,7 +35,7 @@ Testaa Laneilla pelattavaa peliä etukäteen, selvitä pääkontrollit, pikanäp
 
 #### Kotikone 
 
-Pelipaketista jonka saat Cetape-kanavilta on binäärit **Linux, Mac, Win** -käyttiksille. Testaa pelin toiminta omalla konellasi ajoissa. Tarjolla on myös **puavo-pkg** asentimet ja puavomenu template.
+Pelipaketista jonka saat Cetape-kanavilta on binäärit **Linux, Mac, Win** -käyttiksille. Testaa pelin toiminta omalla konellasi ajoissa. Tarjolla on myös [puavo-pkg-asentimet](https://github.com/tohtoris/cetape-games) asentimet ja puavomenu template.
 
 Kotikoneille asennuspaketit saa WA, Discord, Mattermost jne. kanavien kautta kyselemällä. Asennuspaketeissa pääpaino on x86-Linuxissa. Win & Mac löytynee kanssa, mutta näihin ei ole kiinnitetty erityistä huomiota ja joudut testaamaan nämä itse.
 
