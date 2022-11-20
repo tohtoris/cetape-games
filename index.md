@@ -35,7 +35,7 @@ Testaa Laneilla pelattavaa peliä etukäteen, selvitä pääkontrollit, pikanäp
 
 #### Kotikone 
 
-Pelipaketista jonka saat Cetape-kanavilta on binäärit **Linux, Mac, Win** -käyttiksille. Testaa pelin toiminta omalla konellasi ajoissa. Tarjolla on myös [puavo-pkg-asentimet](https://github.com/tohtoris/cetape-games) asentimet ja puavomenu template.
+Pelipaketista jonka saat Cetape-kanavilta on binäärit **Linux, Mac, Win** -käyttiksille. Testaa pelin toiminta omalla konellasi ajoissa. Tarjolla on myös [puavo-pkg-asentimet](https://github.com/tohtoris/cetape-games) ja puavomenu template.
 
 Kotikoneille asennuspaketit saa WA, Discord, Mattermost jne. kanavien kautta kyselemällä. Asennuspaketeissa pääpaino on x86-Linuxissa. Win & Mac löytynee kanssa, mutta näihin ei ole kiinnitetty erityistä huomiota ja joudut testaamaan nämä itse.
 
@@ -46,11 +46,8 @@ cd cetape-games
 make
 sudo pauvo-pkg install peli.tar.gz
 ```
-### Vinkit
 
 ## OpenArena Truecombat
-
-
 
 Yleisin pelattava peli on **Quake 3 modi Truecombat**. Alkuperäinen openarena löytyy [täältä](https://openarena.ws) ja truecombat [täältä](https://truecombat.com). Pelin idea:
 * Truebombat on CS-tyylinen taistelu peli ja realismi modi Quake3-moottorille. Pelissä ei siis pysty loputtomasti juoksemaan, pomppimaan, ottamaan iskua, vaan välillä pitää levätä ja nuolla haavoja. 
@@ -59,31 +56,50 @@ Yleisin pelattava peli on **Quake 3 modi Truecombat**. Alkuperäinen openarena l
 * Sama kenttä pelataan yleensä molempiin suuntiin
 * Ennen peliä on mahdollista pitää yhdessä kenttäkatselmus jossa katsotaan yhdessä "laukkujen" paikat
 
-### FAQ
+### FAQ / Hyvä tietää
 
 * Miten saan konsolin auki? `Shift + 1/2 (Esc-näppäimen alapuolella`
 * Miten pääsen työpöydälle sulkematta peliä? Ensin `Alt + Enter` ja sitten `Shift + 1/2`
 * Miten pääsen työpöydältä takas peliin? Etsi ikkuna ja sitten sama kuin yllä ^ 
 
+### Pelin käynnistäminen ja peliin liittyminen
+
+**Käynnistäminen ja asetukset (ennen laneja)**
+* Käynnistä OpenArena
+* Valitse Modit
+* Valitse TrueCombat
+* Mene asetuksiin (Options > Player)
+** Aseta pelaajallesi nimi
+** Etsi näpäin asetukset ja muokkaa mieleiseksi
+* Testaa peliä/näppäimiä jne. luomalla itsellesi paikallinen serveri (voit lisätä botteja)
+
+Eniten laneissa pelatut kentät: Bahamut, Casino...... muita pitää kaivella listaa
+
+**Peliin liittyminen (Lanit)**
+* Käynnistä Openarena
+* Valitse Multiplayer > Specify > Kirjoita pelipalvelimen osoite
+
 ### Resoluution asettaminen
 
-Openarena ei ymmärrä mitään laajakuvaresoluutioista, joten saatat joutua editoimaan resoluutioita käsin peli q3config.cfg-tiedostosta. Resoluutio on oletuksena pyritty asettamaan FullHD-asetuksella. Lanikoulussa olevilta koneilta tiedosto löytyy suoraan pikalinkkinä käynnistys (Menu)-valikosta. Voit editoida myös haluamallasi tekstiedotorilla komentoriviltä seuravasti.
+Openarena ei ymmärrä mitään laajakuvaresoluutioista, joten saatat joutua editoimaan resoluutioita käsin pelin q3config.cfg-tiedostosta. Resoluutio on oletuksena pyritty asettamaan FullHD-asetuksella. Lanikoulussa olevilta koneilta tiedosto löytyy suoraan pikalinkkinä käynnistys (Menu)-valikosta. Voit editoida myös haluamallasi tekstiedotorilla komentoriviltä seuravasti.
 
 ```
 cd .openarena/truecombat
 gedit q3config.cfg
 ```
-Etsi seuraava asetus ja 
-1. syötä oma resoluutio. 
-2. huolehdi että set `r_mode on -1`
-3. tallenna
-4. käynnistä peli uudelleen
-```
+Etsi seuraava asetus ja...
 seta r_customheight "1080"
 seta r_customwidth "1920"
 seta r_noborder "0"
 seta r_fullscreen "1"
 seta r_mode "-1"
+
+1. syötä oma resoluutio. 
+2. huolehdi että set `r_mode on -1`
+3. tallenna
+4. käynnistä peli uudelleen
+```
+
 ```
 ### Näppäimet
 
@@ -91,7 +107,7 @@ Oletuksina käytettävät kontrollit ovat
 
 | **Tapahtuma**             | **Kontrolli**          | **Huomioita**                                                |
 |---------------------------|------------------------|--------------------------------------------------------------|
-| Valitse ase / suojat jna. |                        | Toimii omassa basessa / tulee voimaan kun "synnyt uudelleen" |
+| Valitse ase / suojat jna. | M                      | Toimii omassa basessa / tulee voimaan kun "synnyt uudelleen" |
 | Liikkuminen               | WASD                   |                                                              |
 | Katseen liikutus          | Hiiri                  |                                                              |
 | Kurkkaa nurkan taakse     | Q & E                  |                                                              |
@@ -100,12 +116,12 @@ Oletuksina käytettävät kontrollit ovat
 | Juokse                    | Shift                  |                                                              |
 | Kerää lippu/laukku        | Kyykisty laukun päälle |                                                              |
 | Aseen lataaminen          | R                      |                                                              |
-| Pudota ase                |                        |                                                              |
+| Pudota ase                | Z                      |                                                              |
 | Oven avaus                | Enter                  |                                                              |
 | Tähtääminen               | Vasen hiiri            |                                                              |
 | Haavan sitominen (badage) | B                      |                                                              |
-| Puhu kaikille             | T                      |                                                              |
-| Puhu tiimille             |                        |                                                              |
+| Puhu kaikille             | P                      |                                                              |
+| Puhu tiimille             | T                      |                                                              |
 
 
 
