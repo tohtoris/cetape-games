@@ -46,7 +46,7 @@ sudo puavo-pkg install peli.tar.gz
 
 ## OpenArena Truecombat
 
-Yleisin pelattava peli on **Quake 3 (Openarena) modi Truecombat**. Alkuperäinen openarena löytyy [täältä](https://openarena.ws) ja truecombat [täältä](https://truecombatelite.com). Pelin idea:
+Yleisin pelattava peli on **Quake 3 (Openarena) modi Truecombat**. Alkuperäinen openarena löytyy [täältä](https://openarena.ws) ja truecombat [täältä](http://www.truecombatelite.com). Pelin idea:
 * Truebombat on CS-tyylinen taistelupeli ja realismimodi Quake3-moottorille. Pelissä ei siis pysty loputtomasti juoksemaan, pomppimaan ja ottamaan iskua, vaan välillä pitää levätä ja nuolla haavoja. 
 * Mitä enemmän kannat kamaa (Aseita, kypärä, liivit jne.) sitä kömpelömpi ja hitaampi olet.
 * Yleensä pelataan joukkuettain "Lipun ryöstöä"
