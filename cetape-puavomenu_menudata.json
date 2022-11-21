@@ -1,0 +1,88 @@
+{
+    "programs": {
+        "cetape-openarena": {
+             "tags": "default"
+        },
+        "cetape-openarena-wine": {
+             "tags": "default"
+        },
+        "cetape-openarena-gamma": {
+             "tags": "default"
+        },
+        "cetape-etlegacy": {
+             "tags": "default"
+        },
+        "cetape-quake": {
+             "tags": "default"
+        },
+        "cetape-docs": {
+            "type": "web",
+            "url": "https://tohtoris.github.io/cetape-games/",
+            "name": "OHJEET",
+            "description": "Cetape Docs",
+            "icon": "application-x-chm",
+            "tags": "default"
+        },
+        "cetape-doom": {
+             "tags": "default"
+        },
+        "discord": {
+             "tags": "default"
+        },
+        "discordweb": {
+            "type": "web",
+            "url": "https://discordapp.com/app",
+            "name": "Discord (WEB)",
+            "description": "Discord",
+            "icon": "discord",
+            "tags": "default"
+        },
+        "edittcconfig": {
+            "type": "custom",
+            "command": "gedit .openarena/truecombat/q3config.cfg",
+            "name": "Edit Truecombat q3config.cfg",
+            "description": "q3config.cfg",
+            "icon": "application-text",
+            "tags": "default"
+        },
+        "mumble": {
+             "tags": "default"
+        },
+        "firefox": {
+             "tags": "default"
+        },
+        "google-chrome": {
+             "tags": "default"
+        },
+        "terminator": {
+             "tags": "default"
+        },
+        "steam": {
+             "tags": "default"
+        }
+    },
+    "categories": {
+        "category-cetape": {
+            "position": -100,
+            "name": "CETAPE",
+            "hidden_by_default": true,
+            "programs": [
+                "cetape-docs",
+                "cetape-openarena",
+                "cetape-openarena-wine",
+                "cetape-openarena-gamme",
+                "edittcconfig",
+                "cetape-etlegacy",
+                "cetape-quake",
+                "cetape-doom",
+                "google-chrome",
+                "firefox",
+                "mumble",
+                "discord",
+                "discordweb",
+                "steam",
+                "terminator"
+            ]
+        }
+    }
+}

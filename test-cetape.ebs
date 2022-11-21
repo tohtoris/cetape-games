@@ -1,0 +1,7 @@
+#!/bin/sh
+
+puavo-conf --set-mode=add puavo.pkg.cetape-doom      install
+puavo-conf --set-mode=add puavo.pkg.cetape-etlegacy  install
+puavo-conf --set-mode=add puavo.pkg.cetape-openarena install
+puavo-conf --set-mode=add puavo.pkg.cetape-quake     install
+/etc/puavo-conf/scripts/setup_puavopkgs
