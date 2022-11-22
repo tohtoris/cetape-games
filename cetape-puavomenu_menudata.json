@@ -45,6 +45,14 @@
             "icon": "application-text",
             "tags": "default"
         },
+        "editoaconfig": {
+            "type": "custom",
+            "command": "gedit .openarena/baseoa/q3config.cfg",
+            "name": "Edit Openarena q3config.cfg",
+            "description": "q3config.cfg",
+            "icon": "application-text",
+            "tags": "default"
+        },
         "mumble": {
              "tags": "default"
         },
