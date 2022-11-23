@@ -1,0 +1,1 @@
+This graph represents the overall activity of players among all matches. Activity index is the number of events (kills, deaths, flag pickups, flag returns or flag captures) per minute divided by the total number of players attended that match.
