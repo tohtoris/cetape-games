@@ -85,7 +85,7 @@ Eniten laneissa pelatut kentät: Bahamut, Casino...... muita pitää kaivella li
 Openarena ei ymmärrä mitään laajakuvaresoluutioista, joten saatat joutua editoimaan resoluutioita käsin pelin q3config.cfg-tiedostosta. Resoluutio on oletuksena pyritty asettamaan FullHD-asetuksella. Lanikoulussa olevilta koneilta tiedosto löytyy suoraan pikalinkkinä käynnistys (Menu)-valikosta. Voit editoida myös haluamallasi tekstiedotorilla komentoriviltä seuravasti.
 
 ```
-cd .openarena/baseoa  # (jos liityt peliin käynnistämällä Openarena > Multiplayer [yleisin]) TAI  cd .openarena/baseoa (Jos liityt peliin Openarena > Mods > Truecombat)
+cd .openarena/baseoa  # (jos liityt peliin käynnistämällä Openarena > Multiplayer [yleisin]) TAI  cd .openarena/truecombat (Jos liityt peliin Openarena > Mods > Truecombat)
 gedit q3config.cfg
 ```
 Etsi seuraava asetus ja...
