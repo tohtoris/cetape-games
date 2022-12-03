@@ -1,0 +1,1 @@
+This graph represents duel statistics between all players. The value is a percentage of duels won by the Killer (player on the vertical axis). Hence, the value of 50 means that the Killer has won and lost equal amount of duels against the Victim (the player on horizontal axis). An empty cell means that players have not encountered in a duel.
