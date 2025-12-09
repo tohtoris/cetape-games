@@ -148,7 +148,9 @@ Lataa pelin **32-bittinen** (i386) versio osoitteesta [ETLegacy.com](https://www
 
 ### Pelin käynnistäminen ja peliin liittyminen
 Jos pelaat Linuxilla omalla koneella (ei Puavo), ETLegacyn sivuilta ladattava asennin kannattaa siirtää esim. käyttäjäsi home-kansioon. Tällöin peli asentuu homen alle `etlegacy-(versionumero)` kansioon.
-Kyseisessä kansiossa on tiedosto **`run-etl.sh`**, jolla peli käynnistetään (Linuxillä tätä on käytettävä! Tarvittaessa salli tiedoston suorittaminen ohjelmana).  
+Tällöin tee kansioon tiedosto **`run-etl.sh`** jonka sisältö on `LD_PRELOAD=/usr/lib/i386-linux-gnu/libXext.so.6 ./etl.i386` (Linuxillä tätä on käytettävä! Tarvittaessa salli tekemäsi tiedoston suorittaminen ohjelmana).  
+Voit myös ladata puavo-pkg-asentimen sisältä löytyvän linkin kautta uusimman ETLegacy paketin, johon on tämä tärkeä tiedosto lisätty jo kivasti mukaan.
+
 Muilla järjestelmillä asennusohjelman pitäisi tehdä kivasti pikakuvake josta pelin saa käyntiin.
 
 **Käynnistäminen ja asetukset (ennen laneja)**
