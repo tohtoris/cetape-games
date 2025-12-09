@@ -119,7 +119,7 @@ Oletuksina käytettävät kontrollit ovat (nämä tietysti voit muokata mieleise
 | Pudota ase                | Z                      |                                                              |
 | Oven avaus                | Enter                  |                                                              |
 | Tähtääminen               | Vasen hiiri            |                                                              |
-| Haavan sitominen (bandage) | B                      |                                                              |
+| Haavan sitominen (bandage) | B                      |                                                             |
 | Puhu kaikille             | P                      |                                                              |
 | Puhu tiimille             | T                      |                                                              |
 
@@ -127,11 +127,67 @@ Oletuksina käytettävät kontrollit ovat (nämä tietysti voit muokata mieleise
 
 
 
+## ETLegacy
+
+### Asennus
+Linuxilla tällä pelillä on riippuvuuksia joita ei välttämättä ole järjestelmässäsi asennettuna.  
+Tässä Debian/Ubuntu-kohtaiset komennot riippuvuuksien asentamisesta, muokkaa tarvittaessa itse sopivaksi omalle distrollesi:
+```
+sudo dpkg --add-architecture i386
+sudo apt update
+sudo apt install libasound2-plugins libdrm2:i386 libexpat1:i386 libglu1-mesa:i386 libgl1:i386 libsdl2-2.0-0:i386 libxext6:i386
+```
+Lataa pelin **32-bittinen** (i386) versio osoitteesta [ETLegacy.com](https://www.etlegacy.com/download) tai puavo-pkg-asennuksella (ohje ylempänä)
+
+### FAQ / Hyvä tietää
+
+* Miten saan konsolin auki? `½§ -näppäin (Esc ja Tab -näppäinten välissä, 1-näppäimen vasemmalla puolella)`
+* Miten pääsen työpöydälle sulkematta peliä? `Esim. Alt-Tab tai Win/Super/Meta -näppäin` 
+* Miten pääsen työpöydältä takas peliin? `Paina sovelluksen kuvaketta järjestelmäsi tehtäväpalkista` 
+* Miten vaihdan joukkuetta tai hahmoa? `Palvelimella ollessasi, avaa "Limbo-menu" L-näppäimestä.`
+
+### Pelin käynnistäminen ja peliin liittyminen
+Jos pelaat Linuxilla omalla koneella (ei Puavo), ETLegacyn sivuilta ladattava asennin kannattaa siirtää esim. käyttäjäsi home-kansioon. Tällöin peli asentuu homen alle `etlegacy-(versionumero)` kansioon.
+Kyseisessä kansiossa on tiedosto **`run-etl.sh`**, jolla peli käynnistetään (Linuxillä tätä on käytettävä! Tarvittaessa salli tiedoston suorittaminen ohjelmana).  
+Muilla järjestelmillä asennusohjelman pitäisi tehdä kivasti pikakuvake josta pelin saa käyntiin.
+
+**Käynnistäminen ja asetukset (ennen laneja)**
+1. Käynnistä ET:Legacy.  
+2. Säädä pelaajanimesi ja asetuksesi pelin antamalla ensikäynnistysruudulla. Loput asetukset voit tämän jälkeen säätää kohdilleen Menusta "Options -> Game/View/Controls/System".  
+3. Testaa yhdistää palvelimelle joko etsimällä se palvelinlistauksesta nimellä "ceTAPE Joululaniserveri" tai konsolin kautta komennolla `/connect wolf.risusama.eu:27960` - salasanan saat ceTAPE -viestintäkanavilta.  
+4. Mikäli yhdistämisessä tulee ongelmia (eritoten virheilmoitus `... invalid GUID ...`, kopioi  
+   a. Linuxilla: tiedosto `$HOME/.etlegacy/etmain/etkey` sijaintiin `$HOME/.etlegacy/silent/etkey`  
+   b. Windowsilla tiedosto `%userprofile%\Documents\ETLegacy\etmain\etkey` sijaintiin `%userprofile%\Documents\ETLegacy\silent\etkey`  
+   c. Mikäli tiedostoa ei ole etmain-kansiossa, generoi sen sisältö [ETclan.de -sivulla](https://www.etclan.de/etkey.php) ja tallenna se kumpaankin sijaintiin.  
+5. Muussa tapauksessa voit olla myös yhteydessä esim. Risuun, joka osannee auttaa ja selvitellä ETLegacyyn liittyviä vikatilanteita.
+
+### Oletusnäppäimet
+
+Oletuksina käytettävät kontrollit ovat (nämä tietysti voit muokata mieleiseksesi)
+
+| **Tapahtuma**                                            | **Kontrolli**             | **Huomioita**                                                |
+|----------------------------------------------------------|------------------------   |--------------------------------------------------------------|
+| Valitse tiimi, hahmo, aseet jne.                         | L                         | Toimii missä vaan, tulee voimaan kun "synnyt uudelleen"      |
+| Liikkuminen                                              | WASD                      |                                                              |
+| Katseen liikutus                                         | Hiiri                     |                                                              |
+| Kurkkaa nurkan taakse                                    | Q & E                     |                                                              |
+| Hyppy                                                    | Välilyönti                |                                                              |
+| Kykkyyn                                                  | C                         |                                                              |
+| Makuulle                                                 | X                         |                                                              |
+| Juokse                                                   | Shift                     |                                                              |
+| Kerää esine (esim. healthpack) tai objective             | Kävele esineen päältä     |                                                              |
+| Käytä esinettä/ovea/poimi uusi ase maasta (kädenkuva)    | F                         |                                                              |
+| Kädessä olevan esineen vaihto                            | 1-8 tai hiiren rulla      |                                                              |
+| Aseen lataaminen                                         | R                         |                                                              |
+| Tähtääminen                                              | Oikea hiiri               |                                                              |
+| Ampuminen                                                | Vasen hiiri               |                                                              |
+| Hahmokohtaisten erikoisasioiden käyttö                   | 6 ja sitten vasen hiiri   |                                                              |
+| Puhu kaikille                                            | T                         |                                                              |
+| Puhu tiimille                                            | Y                         |                                                              |
+
+
+
 ##### Tulee joskus....
-
-#### ETLegacy
-
-
 
 #### Doom
 
