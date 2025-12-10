@@ -11,8 +11,8 @@ case "${command}" in
 	ln -fns "${upstream_dir}/cetape-etlegacy" /opt/cetape-etlegacy
         ln -fns "${upstream_dir}/cetape-etlegacy/ET.xpm" /usr/share/icons/ET.xpm
         ln -fns "${upstream_dir}/cetape-etlegacy/desktop/cetape-etlegacy.desktop"  /usr/share/applications/cetape-etlegacy.desktop
-        ln -fns "${upstream_dir}/cetape-etlegacy/desktop/cetape-etlegacy-tce.desktop"  /usr/share/applications/cetape-etlegacy-tce.desktop
-        ln -fns "${upstream_dir}/cetape-etlegacy/desktop/cetape-etlegacy-cqb.desktop" /usr/share/applications/cetape-etlegacy-cqb.desktop
+        #ln -fns "${upstream_dir}/cetape-etlegacy/desktop/cetape-etlegacy-tce.desktop"  /usr/share/applications/cetape-etlegacy-tce.desktop
+        #ln -fns "${upstream_dir}/cetape-etlegacy/desktop/cetape-etlegacy-cqb.desktop" /usr/share/applications/cetape-etlegacy-cqb.desktop
 	;;
     unconfigure)
 	rm -f /opt/cetape-etlegacy \
