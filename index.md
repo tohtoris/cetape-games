@@ -130,6 +130,14 @@ Oletuksina käytettävät kontrollit ovat (nämä tietysti voit muokata mieleise
 ## ETLegacy
 
 ### Asennus
+
+#### Oma Puavo-kone
+Helpoin tapa on, että 
+1. haet pelipaketin chätti-kanavilla saatavista linkeistä
+2. purat paketin kotikansioon
+3. käynnistät pelin kotikansiostasi 
+
+#### Oma koti-linux-kone
 Linuxilla tällä pelillä on riippuvuuksia joita ei välttämättä ole järjestelmässäsi asennettuna.  
 Tässä Debian/Ubuntu-kohtaiset komennot riippuvuuksien asentamisesta, muokkaa tarvittaessa itse sopivaksi omalle distrollesi:
 ```
@@ -147,6 +155,14 @@ Lataa pelin **32-bittinen** (i386) versio osoitteesta [ETLegacy.com](https://www
 * Miten vaihdan joukkuetta tai hahmoa? `Palvelimella ollessasi, avaa "Limbo-menu" L-näppäimestä.`
 
 ### Pelin käynnistäminen ja peliin liittyminen
+
+#### Puavo-koneet
+Lähtökohtaisesti on suositeltavaa purkaa ja asentaa pelipaketti omaan kotikansioon (kuten yllä neuvottu). Voit käynnistää pelin  **`run-etl.sh`** -skriptillä.
+
+Lainakoneille peli on saatettu asentaa kivasti valmiiksi puavo-pkg:nä ja se löytyy sovellusvalikosta.
+
+#### Omat koneet
+
 Jos pelaat Linuxilla omalla koneella (ei Puavo), ETLegacyn sivuilta ladattava asennin kannattaa siirtää esim. käyttäjäsi home-kansioon. Tällöin peli asentuu homen alle `etlegacy-(versionumero)` kansioon.
 Tällöin tee kansioon tiedosto **`run-etl.sh`** jonka sisältö on `LD_PRELOAD=/usr/lib/i386-linux-gnu/libXext.so.6 ./etl.i386` (Linuxillä tätä on käytettävä! Tarvittaessa salli tekemäsi tiedoston suorittaminen ohjelmana).  
 Voit myös ladata puavo-pkg-asentimen sisältä löytyvän linkin kautta uusimman ETLegacy paketin, johon on tämä tärkeä tiedosto lisätty jo kivasti mukaan.
